@@ -1,11 +1,10 @@
 import React, {useState, useEffect} from 'react';
 
-const EmployerItem = ({elem, isCheckedAll, handleCheck, selected}) => {
+const EmployerItem = ({elem, isCheckedAll, handleCheck}) => {
     const [isChecked, setIsChecked] = useState(false)
 
 useEffect(() => {
       setIsChecked(isCheckedAll)
-    console.log(elem.name)
 }, [isCheckedAll])
 
 
